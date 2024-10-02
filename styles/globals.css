@@ -1,6 +1,20 @@
 @tailwind base;
+/* 
+ 기본 CSS 리셋: Tailwind가 제공하는 기본적인 CSS 리셋 스타일을 포함시킴.
+ 이를 통해 브라우저 간의 스타일 차이를 최소화. 
+ 일반적인 브라우저의 기본 스타일을 제거하고, Tailwind의 기반 스타일을 적용.
+ */
 @tailwind components;
+/* 
+ 컴포넌트 스타일 정의: Tailwind에서 제공하는 기본 컴포넌트 스타일을 포함시킴.
+ 이는 버튼, 폼, 카드 등과 같은 재사용 가능한 UI 요소들의 기본 스타일을 정의. 
+ */
+
 @tailwind utilities;
+/* 
+ 유틸리티 클래스: Tailwind의 유틸리티 클래스들을 활성화.
+ text-center, bg-gray-100, p-4 등과 같은 클래스를 사용하여 빠르게 스타일링 가능.
+ */
 
 :root {
   --background: #ffffff;
@@ -15,6 +29,7 @@
 }
 
 body {
+  @apply bg-gray-100;
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
